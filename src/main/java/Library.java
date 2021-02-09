@@ -18,4 +18,9 @@ public class Library {
             this.collectionOfBooks.add(book);
         }
     }
+
+    public void releaseBook(Book book) {
+        int bookIndex = this.collectionOfBooks.indexOf(book);
+        this.collectionOfBooks.remove(bookIndex);
+    }
 }

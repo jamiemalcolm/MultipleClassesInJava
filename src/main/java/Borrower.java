@@ -15,7 +15,12 @@ public class Borrower {
         return this.name;
     }
 
-    public int getCollectionsize(){
+    public int getCollectionSize(){
         return this.collection.size();
+    }
+
+    public void checkOutBook(Library library, Book book) {
+        library.releaseBook(book);
+        this.collection.add(book);
     }
 }
