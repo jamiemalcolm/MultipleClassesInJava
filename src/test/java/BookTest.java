@@ -18,4 +18,13 @@ public class BookTest {
     public void hasTitle(){
         assertEquals("The Davinci Code", book1.getTitle());
     }
+    @Test
+    public void hasAuthor(){
+        assertEquals("Dan Brown", book1.getAuthor());
+    }
+    @Test
+    public void hasGenre(){
+        assertEquals("Thriller", book1.getGenre());
+    }
+
 }
